@@ -40,7 +40,8 @@
         margin: auto;
         }
         .blurb{
-        margin: auto;
+        margin-top: 1%;
+		margin-left: 1%;
         padding-right: 58%;
         width: 40%;
 
@@ -51,22 +52,30 @@
 <body>
 	<div id="fullpage">
         <div class="section active" id="section0">
-            <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut velit ullamcorper lacus aliquet placerat. Quisque a purus pharetra libero tempor hendrerit non elementum purus. Fusce suscipit ipsum eu massa lacinia mattis. Proin fermentum ex at ante tincidunt, et vulputate leo semper. Phasellus commodo orci orci. Aenean in sollicitudin velit. Sed sit amet dictum mauris. In eget eros et nibh sodales imperdiet. Fusce quis placerat quam. Vivamus sagittis, eros in ullamcorper facilisis, lacus magna condimentum lectus, fermentum porta lacus mi quis erat.</p>
-        <div id='plotDiv' style="height: 700px"></div>
-            <h1 style="color:#333;">SCATTER</h1>
+			<div class="slide" id="slide1">
+				<p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut velit ullamcorper lacus aliquet placerat. Quisque a purus pharetra libero tempor hendrerit non elementum purus. Fusce suscipit ipsum eu massa lacinia mattis. Proin fermentum ex at ante tincidunt, et vulputate leo semper. Phasellus commodo orci orci. Aenean in sollicitudin velit. Sed sit amet dictum mauris. In eget eros et nibh sodales imperdiet. Fusce quis placerat quam. Vivamus sagittis, eros in ullamcorper facilisis, lacus magna condimentum lectus, fermentum porta lacus mi quis erat.</p>
+			<div id='negFilt' style="height: 650px"></div>
+				<h1 style="color:#333; margin-bottom: 10%;">NEGATIVE SENTIMENT</h1>		
+			</div>
+			<div class="slide" id="slide2">
+				<p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut velit ullamcorper lacus aliquet placerat. Quisque a purus pharetra libero tempor hendrerit non elementum purus. Fusce suscipit ipsum eu massa lacinia mattis. Proin fermentum ex at ante tincidunt, et vulputate leo semper. Phasellus commodo orci orci. Aenean in sollicitudin velit. Sed sit amet dictum mauris. In eget eros et nibh sodales imperdiet. Fusce quis placerat quam. Vivamus sagittis, eros in ullamcorper facilisis, lacus magna condimentum lectus, fermentum porta lacus mi quis erat.</p>
+				<div id='posFilt' style="height: 650px"></div>	
+				<h1 style="color:#333; margin-bottom: 10%;">POSITIVE SENTIMENT</h1>	
+			</div>
         </div>
+
         <div class="section " id="section1">
-            <div class="slide" id="slide1">
-                <div class="intro">
-                    <h1>FREQUENCY</h1>
-                    <h2>OBAMA</h2>
+				<div class="slide" id="slide1">
+						<h1>OBAMA</h1>
                     <p>From 2009 to 2017, Obama had 6257 tweets over his extensive presidential terms. <br></br>On average, that is 2 tweets a day.</p>
-                    <br></br>
+					<div id='obamabar'style="width: 1920px"></div>
+				</div>
+
+				<div class="slide" id="slide2">
                     <h2>TRUMP</h2>
                     <p>From 2017 to 2021, Trump had accumulated a total of 16,716 tweets before his account was indefinitely suspended.<br></br> On average, that is 11 tweets a day. </p>
-
+						<div id='trumpbar'style="width: 1920px"></div>
                 </div>
-            </div>
 		</div>
 					
 		<div class="section" id="section2">
@@ -82,7 +91,10 @@
 
 	<script type="text/javascript" src="src/fullpage.js"></script>
     <script type="text/javascript" src="filter.js"></script>
+	<script type="text/javascript" src="filter2.js"></script>
     <script type="text/javascript" src="sentimentpie.js"></script>
+	<script type="text/javascript" src="trumpfreqbar.js"></script>
+	<script type="text/javascript" src="obamafreqbar.js"></script>
 	 <!--issue with january data, cannot get auto height? -->
 	<script type="text/javascript">
 		var myFullpage = new fullpage('#fullpage', {
