@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>deco3100a3test</title>
+	<meta name="author" content="Gabriel Ng" />
+	<meta name="description" content="deco3100a3" />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--fullpage.js was a way I could make the slides real fancy, Credits:Alvaro Trigo @ https://alvarotrigo.com/fullPage/  here -->
+	<link rel="stylesheet" type="text/css" href="src/fullpage.css" /> 
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+		<style>
+		h1{
+			font-size: 5em;
+			font-family: arial,helvetica;
+			color: #fff;
+			margin:0;
+		}
+		.intro p{
+			color: #fff;
+		}
+		.section{
+			text-align:center;
+		}
+		.fp-slidesNav.bottom{
+			bottom: 25px;
+		}
+		#infoMenu li a {
+			color: #fff;
+		}
+		#section2 h1{
+			color: #333;
+		}
+        .center {
+        margin: auto;
+        }
+        .blurb{
+        margin: auto;
+        padding-right: 58%;
+        width: 40%;
+
+        }
+		</style>
+</head>
+
+<body>
+	<div id="fullpage">
+        <div class="section active" id="section0">
+            <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut velit ullamcorper lacus aliquet placerat. Quisque a purus pharetra libero tempor hendrerit non elementum purus. Fusce suscipit ipsum eu massa lacinia mattis. Proin fermentum ex at ante tincidunt, et vulputate leo semper. Phasellus commodo orci orci. Aenean in sollicitudin velit. Sed sit amet dictum mauris. In eget eros et nibh sodales imperdiet. Fusce quis placerat quam. Vivamus sagittis, eros in ullamcorper facilisis, lacus magna condimentum lectus, fermentum porta lacus mi quis erat.</p>
+        <div id='plotDiv' style="height: 700px"></div>
+            <h1 style="color:#333;">SCATTER</h1>
+        </div>
+        <div class="section " id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>FREQUENCY</h1>
+                    <h2>OBAMA</h2>
+                    <p>From 2009 to 2017, Obama had 6257 tweets over his extensive presidential terms. <br></br>On average, that is 2 tweets a day.</p>
+                    <br></br>
+                    <h2>TRUMP</h2>
+                    <p>From 2017 to 2021, Trump had accumulated a total of 16,716 tweets before his account was indefinitely suspended.<br></br> On average, that is 11 tweets a day. </p>
+
+                </div>
+            </div>
+		</div>
+					
+		<div class="section" id="section2">
+					<div id='sentimentpies'style="width: 1920px"></div>
+			<h1>SENTIMENT PIECHART</h1>
+			<p>Sentiment analysis is a method of using natural language processing to classify word data into affective states: positive, neutral and negative. This is used to decide and sort the affective states of each of the president's tweets.</p>
+			<br></br>
+			<p></p>
+		</div>
+
+
+
+
+	<script type="text/javascript" src="src/fullpage.js"></script>
+    <script type="text/javascript" src="filter.js"></script>
+    <script type="text/javascript" src="sentimentpie.js"></script>
+	 <!--issue with january data, cannot get auto height? -->
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			sectionsColor: ['#white', '#4BBFC3', '#7BAABE', '#FDA50F', 'whitesmoke', '#ccddff'],
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage', 'lastPage'],
+			menu: '#menu',
+			slidesNavigation: true,
+            navigation: true,
+			lazyLoad: true,
+            controlArrows:false
+			
+		});
+	</script>
+
+</body>
+</html>
