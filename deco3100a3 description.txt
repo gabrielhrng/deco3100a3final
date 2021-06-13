@@ -1,0 +1,14 @@
+Initially the parameter of sentiment fascinated me was sentiment. In context of this visualisation, I was interested in the sentiment that was projected by each president, in light of how the media and popular culture portrayed each president. I was also interested in how often each president tweeted, and wondered if that had any effect on the magnitude of sentiment, whether it be positive or negative. This means that in analysing the sentiment a tweet has, we come closer to understanding the emotions that our two presidents were trying to convey through discussion of politics to the public and sway or influence emotions. Using an objective method to measure sentiment was an ideal way to visualise this data with no bias, and no context, purely focusing on the makeup of words and language and when used together in sentences. To achieve my aim, I transformed my data to be visualised in a scatter graph, bar and pie charts.
+ 
+ 
+For each section, the layout was optimised for users to be able to quickly read information with ease ("Tips for creating effective, engaging data visualizations", 2021), An example of this is seen in the first slide where information read first was placed in the top left hand corner. Graphs, or views, were limited one per slide to avoid the visualisation from becoming cluttered. 
+Initially I was planning to adjust the sizes of the tweets in the scatter graph and size it according to the sentiment, just so the scale of magnitude can be visually displayed. Unfortunately, I didn’t know how to do this, however I have a hunch that it is possible to do.
+ 
+In the early stages of creating this web visualisation, a heuristic evaluation was performed and revealed the possible usability flaws in the visualisation. Filtering was suggested to isolate and reduce clutter of tweets. To solve this, I added a second slide to the section so that users can switch between displays. Users can now switch between viewing the negative tweets and positive tweets. Suggestions made also included adding a filter to filter per president, which can be implemented in a further iteration.  
+Interactivity was also another suggestion to improve the user experience. This was focused on and added, and navigation dots can be used to navigate the different views. For the frequency section, as the data was large, I separated the page from the facts, to avoid too much information on one page. Buttons were added for usability and a smoother experience from page to page.
+ 
+References
+
+ANDERSON, N., 2021. How (and Why) to Conduct a Heuristic Evaluation. [online] dscout.com. Available at: <https://dscout.com/people-nerds/heuristic-evaluations> [Accessed 1 June 2021].
+
+Tableau. 2021. Tips for creating effective, engaging data visualizations. [online] Available at: <https://www.tableau.com/learn/articles/data-visualization-tips> [Accessed 1 June 2021].
