@@ -12,8 +12,8 @@ function combine_and_filter(trump_tweets, obama_tweets, tsne_data_trump, tsne_da
   }
   
   //combine all tweets into one array
-  let tweets = [...trump_tweets, ...obama_tweets];
-  
+  let tweets = [...trump_tweets,...obama_tweets,];
+
 
   //only include tweets containing one of these strings
   //Try experimenting with different search tags
@@ -50,7 +50,6 @@ function make_plot(tweets){
     },
 
 ];
-
   let layout = {
     hovermode: "closest", //hover closest by default
     xaxis: {
@@ -58,10 +57,11 @@ function make_plot(tweets){
     },
     yaxis: {
       visible: false,
-    }
+    },
+    showlegend: true,
   }
 
-  Plotly.newPlot('plotDiv', data, layout);
+  Plotly.newPlot('negFilt', data, layout);
 }
 
 //from https://codereview.stackexchange.com/a/171857
