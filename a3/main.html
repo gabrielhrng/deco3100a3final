@@ -4,9 +4,9 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>deco3100a3test</title>
+	<title>Obama and Trump: Sentiment</title>
 	<meta name="author" content="Gabriel Ng" />
-	<meta name="description" content="deco3100a3" />
+	<meta name="description" content="Obama and Trump: Sentiment" />
 	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
 	<meta name="Resource-type" content="Document" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,8 +44,30 @@
 		margin-left: 1%;
         padding-right: 58%;
         width: 40%;
-
         }
+		.button {
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+			}
+		.button2 {
+			background-color: #4BBFC3; 
+			color: black; 
+
+			}
+
+		.button2:hover {
+			background-color: #008CBA;
+			color: white;
+}
+
 		</style>
 </head>
 
@@ -53,36 +75,62 @@
 	<div id="fullpage">
         <div class="section active" id="section0">
 			<div class="slide" id="slide1">
-				<p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut velit ullamcorper lacus aliquet placerat. Quisque a purus pharetra libero tempor hendrerit non elementum purus. Fusce suscipit ipsum eu massa lacinia mattis. Proin fermentum ex at ante tincidunt, et vulputate leo semper. Phasellus commodo orci orci. Aenean in sollicitudin velit. Sed sit amet dictum mauris. In eget eros et nibh sodales imperdiet. Fusce quis placerat quam. Vivamus sagittis, eros in ullamcorper facilisis, lacus magna condimentum lectus, fermentum porta lacus mi quis erat.</p>
+				<p class="blurb">
+					This scatter plot depics tweets with negative sentiment. Negative sentiment here is classified as any tweet that is less than 0 sentiment. Trends seen here:
+					<br></br>
+					<ul style="text-align: left; margin-left: 1%;">
+						<li>Trump's tweets are condensed more, with some of his tweets classfied in large clusters of simillar semantics e.g. top left corner has a cluster of tweets with one negative word followed by an exclamation mark and a link.</li>
+						<li>Obama has his tweets more evenly distributed around the graph, with occasional clusters of similar topic e.g. bottom cluster speaks on Mitt Romney.</li>
+					  </ul>
+					<br></br>
+
+				</p>
 			<div id='negFilt' style="height: 650px"></div>
 				<h1 style="color:#333; margin-bottom: 10%;">NEGATIVE SENTIMENT</h1>		
 			</div>
 			<div class="slide" id="slide2">
-				<p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut velit ullamcorper lacus aliquet placerat. Quisque a purus pharetra libero tempor hendrerit non elementum purus. Fusce suscipit ipsum eu massa lacinia mattis. Proin fermentum ex at ante tincidunt, et vulputate leo semper. Phasellus commodo orci orci. Aenean in sollicitudin velit. Sed sit amet dictum mauris. In eget eros et nibh sodales imperdiet. Fusce quis placerat quam. Vivamus sagittis, eros in ullamcorper facilisis, lacus magna condimentum lectus, fermentum porta lacus mi quis erat.</p>
+				<p class="blurb">
+					<br></br>
+					For positive sentiment, both presidents' tweets are clustered and grouped by topic, rather than semantics. Positive sentiment here is classified as any tweet that is more than 0 sentiment.
+				</p>
 				<div id='posFilt' style="height: 650px"></div>	
 				<h1 style="color:#333; margin-bottom: 10%;">POSITIVE SENTIMENT</h1>	
 			</div>
         </div>
 
         <div class="section " id="section1">
+
+					
 				<div class="slide" id="slide1">
-						<h1>OBAMA</h1>
-                    <p>From 2009 to 2017, Obama had 6257 tweets over his extensive presidential terms. <br></br>On average, that is 2 tweets a day.</p>
-					<div id='obamabar'style="width: 1920px"></div>
+						<h1>TRUMP</h1>
+						<br></br>
+                    <h2>From 2017 to 2021, Trump had accumulated a total of <b>16,716 tweets</b> before his account was indefinitely suspended.<br></br> On average, that is <b>11 tweets</b> a day. </h2>
+						<br></br>
+					<button class="button button2"><a href="frequency.html"><h2>Click Here to see the Stats</h2></a></button>
 				</div>
 
+
 				<div class="slide" id="slide2">
-                    <h2>TRUMP</h2>
-                    <p>From 2017 to 2021, Trump had accumulated a total of 16,716 tweets before his account was indefinitely suspended.<br></br> On average, that is 11 tweets a day. </p>
-						<div id='trumpbar'style="width: 1920px"></div>
-                </div>
+						<h1>OBAMA</h1>
+						<br></br>
+                    <h2>From 2009 to 2017, Obama had <b>6257 tweets</b> over his extensive presidential terms. <br></br>On average, that is <b>2 tweets</b> a day.</h2>
+						<br></br>
+					<button class="button button2"><a href="frequency2.html"><h2>Click Here to see the Stats</h2></a></button>
+				</div>
+
 		</div>
 					
 		<div class="section" id="section2">
+			<p class="blurb">Sentiment analysis is a method of using natural language processing to classify word data into affective states: positive, neutral and negative. This is used to decide and sort the affective states of each of the president's tweets.
+				<br></br>
+				Despite having different proportions, both presidents propotionally had more positive quotes than negative quotes. 
+			
+
+			</p>
 					<div id='sentimentpies'style="width: 1920px"></div>
-			<h1>SENTIMENT PIECHART</h1>
-			<p>Sentiment analysis is a method of using natural language processing to classify word data into affective states: positive, neutral and negative. This is used to decide and sort the affective states of each of the president's tweets.</p>
-			<br></br>
+			<p></p>
+			<h1 style= "margin-top:10%;">SENTIMENT PIECHART</h1>
+						<br></br>
 			<p></p>
 		</div>
 
@@ -95,11 +143,10 @@
     <script type="text/javascript" src="sentimentpie.js"></script>
 	<script type="text/javascript" src="trumpfreqbar.js"></script>
 	<script type="text/javascript" src="obamafreqbar.js"></script>
-	 <!--issue with january data, cannot get auto height? -->
 	<script type="text/javascript">
 		var myFullpage = new fullpage('#fullpage', {
-			sectionsColor: ['#white', '#4BBFC3', '#7BAABE', '#FDA50F', 'whitesmoke', '#ccddff'],
-			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage', 'lastPage'],
+			sectionsColor: ['#white', '#4BBFC3', '#white'],
+			anchors: ['firstPage', 'secondPage', '3rdPage'],
 			menu: '#menu',
 			slidesNavigation: true,
             navigation: true,
