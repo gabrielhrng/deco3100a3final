@@ -1,12 +1,12 @@
-var allLabels = ['Positive', 'Neutral','Negative'];
+var allLabels = ['Positive Tweets', 'Neutral Tweets','Negative Tweets'];
 
 var allValues = [
-  [53, 25.2, 21.8],
-  [45.2, 43.1, 11.7]
+  [8848,4221, 3647],
+  [2830, 2698, 729]
 ];
 
 var ultimateColors = [
-  [ 'rgb(205, 152, 36)', 'rgb(177, 127, 38)','rgb(99, 79, 37)'],
+  [ 'rgb(242, 55, 94)', 'rgb(168, 29, 46)','rgb(41, 1, 10)'],
   ['rgb(56, 75, 126)', 'rgb(34, 53, 101)','rgb(18, 36, 37)'],
 ];
 
@@ -14,7 +14,7 @@ var data = [{
   values: allValues[0],
   labels: allLabels,
   type: 'pie',
-  name: 'Trump Tweets',
+  name: 'Trump',
   marker: {
   colors: ultimateColors[0],
   textposition: "outside",
@@ -24,13 +24,13 @@ var data = [{
     row: 0,
     column: 0
   },
-  hoverinfo: 'label+percent+name',
-  textinfo: 'none'
+  hoverinfo: 'allValues[0]',
+  textinfo: 'nothing'
 },{
   values: allValues[1],
   labels: allLabels,
   type: 'pie',
-  name: 'Obama Tweets',
+  name: 'Obama',
   marker: {
     colors: ultimateColors[1],
     textposition: "outside",
@@ -40,8 +40,8 @@ var data = [{
     row: 0,
     column: 1
   },
-  hoverinfo: 'label+percent+name',
-  textinfo: 'none'
+  hoverinfo: 'allValues[1]',
+  textinfo: 'nothing'
 }];
 
 var layout = {
